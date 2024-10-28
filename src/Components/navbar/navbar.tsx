@@ -12,10 +12,10 @@ export default function NavbarPage() {
           <div>
             <div className="flex items-center justify-between py-8 md:py-5 md:block">
               <div className="flex items-center">
-                <FaWater className="mr-5 text-2m" />
+                <FaWater className="mr-5 text-2m text-gray-50" />
                 <Link href="/">
-                  <h1 className="text-xl text-xl font-bold">
-                    Guardian of the ocean
+                  <h1 className="text-xl text-xl font-bold text-gray-50">
+                    AquaClean
                   </h1>
                 </Link>
               </div>
@@ -50,7 +50,7 @@ export default function NavbarPage() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="text-m  text-white py-2 px-5 text-center border-b-2 md:border-b-0  hover:bg-green-600  border-green-900  md:hover:text-green-600 md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/home" onClick={() => setNavbar(!navbar)}>
                     Inicio
                   </Link>
                 </li>
