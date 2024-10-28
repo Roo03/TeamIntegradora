@@ -1,53 +1,45 @@
-import Image from "next/image";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
     return(
-    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="flex items-center justify-between p-5 bg-[#06060A] text-white">
+      
+      <div className="flex items-center ml-20">
+        <span className="mr-2">©</span>
+        <p>Todos los derechos reservados a AquaClean</p>
+      </div>
+
+      
+      <div className="flex space-x-4 mr-20">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Facebook"
+          className="hover:text-blue-500"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          <FaFacebookF className="text-2xl" />
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="hover:text-pink-500"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+          <FaInstagram className="text-2xl" />
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://twitter.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          className="hover:text-blue-400"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          <FaTwitter className="text-2xl" />
         </a>
-      </footer>
+      </div>
+    </footer>
+  
     );
 }

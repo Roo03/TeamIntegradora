@@ -6,18 +6,18 @@ import Inicio from "./home/page";
 export default function Home() {
   return (
     <div className="h-screen flex flex-col">
-    {/* Navbar */}
+    
     <NavbarPage />
 
-    {/* Contenido principal con curva en la parte inferior */}
+    
     <div className="flex-grow bg-[#06060A] text-white relative overflow-hidden">
-        <main className="mx-auto max-w-xl">
-            <div className="px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <main className="w-full">
+            <div className="w-full px-4 py-50 sm:px-6 sm:py-24 lg:px-8">
                 <Inicio />
             </div>
         </main>
 
-        {/* Curva de montaña en la parte inferior */}
+        
         <div className="absolute bottom-0 w-full">
             <svg
                 viewBox="0 0 1440 320"
@@ -32,8 +32,9 @@ export default function Home() {
         </div>
     </div>
 
-    {/* Footer */}
+    
     <Footer />
 </div>
+
   );
 }

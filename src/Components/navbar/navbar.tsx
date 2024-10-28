@@ -7,14 +7,14 @@ export default function NavbarPage() {
 
   return (
     <div>
-      <nav className="w-full bg-black fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-black fixed top-0 left-0 right-0 z-10 w-full bg-[#1c1c22]">
         <div className="justify-between px-4 mx-auto lg:max-w-7m md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-8 md:py-5 md:block">
-              <div className="flex items-center">
+              <div className="flex items-center ml-20">
                 <FaWater className="mr-5 text-2m text-gray-50" />
                 <Link href="/">
-                  <h1 className="text-xl text-xl font-bold text-gray-50">
+                  <h1 className="text-xl text-xl font-bold text-gray-50 ">
                     AquaClean
                   </h1>
                 </Link>
@@ -48,7 +48,7 @@ export default function NavbarPage() {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+              <ul className="h-screen md:h-auto items-center justify-center md:flex mr-20">
                 <li className="text-m  text-white py-2 px-5 text-center border-b-2 md:border-b-0  hover:bg-green-600  border-green-900  md:hover:text-green-600 md:hover:bg-transparent">
                   <Link href="/home" onClick={() => setNavbar(!navbar)}>
                     Inicio
